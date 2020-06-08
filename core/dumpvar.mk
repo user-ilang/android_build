@@ -3,13 +3,8 @@ DEVICE := $(CM_BUILD)
 print_build_config_vars := \
   PLATFORM_VERSION \
   RR_VERSION
-ifneq ($(RR_BUILDTYPE),)
-  print_build_config_vars += \
-    RR_BUILDTYPE
-endif
 print_build_config_vars += \
   DEVICE \
-  WITH_ROOT_METHOD \
   TARGET_BUILD_VARIANT \
   TARGET_ARCH \
   BUILD_ID \
